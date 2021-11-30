@@ -8,7 +8,7 @@ class StackManager:
     def __init__(self):
 
         BASE_DIR = Path(os.environ.get('XDG_CONFIG_HOME', '~/.config')).expanduser()
-        conf_dir = BASE_DIR/"redis-todo"
+        conf_dir = BASE_DIR/"redis-stack"
         conf_dir.mkdir(mode=711, parents=True,exist_ok=True)
         conf_file = conf_dir/'config.json'
         if not conf_file.exists():
