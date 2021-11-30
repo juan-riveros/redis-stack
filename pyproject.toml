@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "redis-stack"
+version = "0.1.2"
+description = ""
+authors = ["juan-riveros <1297567+juan-riveros@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sh = "^1.14.2"
+redis = "^4.0.0"
+hiredis = "^2.0.0"
+
+[tool.poetry.dev-dependencies]
+shiv = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+redis-stack = "redis_stack:main"
