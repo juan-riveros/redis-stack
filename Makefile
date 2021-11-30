@@ -1,7 +1,7 @@
 PROJECT_NAME = $(shell poetry version|awk '{print $$1}')
 MODULE_NAME = $(shell poetry version|awk '{print $$1}'|tr '-' '_')
 VERSION = $(shell poetry version -s)
-DOCKER_REGISTRY = registry.naga.lan
+DOCKER_REGISTRY = ${INTERNAL_DOCKER_REGISTRY}
 IMAGE_NAME = ${DOCKER_REGISTRY}/${PROJECT_NAME}
 OUTPUT_FILENAME = ${PROJECT_NAME}-${VERSION}-bin
 WHEEL_NAME = ${DIST_DIR}/${MODULE_NAME}-${VERSION}-py3-none-any.whl
