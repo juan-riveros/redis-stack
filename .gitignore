@@ -1,0 +1,9 @@
+*
+!.gitignore
+!pyproject.toml
+!poetry.lock
+!README.md
+!Dockerfile
+!Makefile
+!redis_stack/
+!redis_stack/*.py
